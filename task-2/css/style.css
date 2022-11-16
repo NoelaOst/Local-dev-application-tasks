@@ -1,0 +1,109 @@
+/* ***NOTE***all font sizes are shown in rem units to assure accesability of the file. Figma design expresses certain measurements in decimal values which are converted in closest whole value in px and after to REM*** */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+  font-style: normal;
+  margin: 4rem 0rem;
+}
+main,
+header,
+section,
+.recipes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main {
+  gap: 2rem;
+}
+header {
+  gap: 1rem;
+  margin-inline: 1rem;
+}
+h1 {
+  font-weight: 600;
+  font-size: 3.375rem;
+  text-transform: uppercase;
+}
+p {
+  font-family: "Rajdhani", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 130%;
+}
+button {
+  font-weight: 600;
+  font-size: 1.25rem;
+  font-family: "Barlow Condensed", sans-serif;
+  background-color: transparent;
+  text-decoration: underline;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+section {
+  gap: 4rem;
+  margin: 0 2.25rem;
+}
+.recipes {
+  gap: 2rem;
+}
+.cocktail-img {
+  border-radius: 100%;
+}
+.img-wrapper {
+  position: relative;
+  height: 383px;
+  width: 383px;
+}
+.graphics {
+  position: absolute;
+  z-index: -1;
+}
+.graphics-top-left {
+  left: -30%;
+  top: -13%;
+}
+.graphics-top-right {
+  right: -10%;
+  top: 0%;
+}
+.graphics-bottom-left {
+  left: -17%;
+  bottom: -13%;
+}
+.graphics-bottom-right {
+  right: 0%;
+  bottom: -10%;
+}
+h2 {
+  text-transform: uppercase;
+  max-width: 360px;
+  max-height: 80px;
+}
+@media (min-width: 1440px) {
+  body {
+    margin: 4rem;
+  }
+  main {
+    gap: 4rem;
+  }
+  section {
+    flex-direction: row;
+  }
+  .cocktail-img {
+    min-width: 360px;
+    min-height: 360px;
+  }
+}
