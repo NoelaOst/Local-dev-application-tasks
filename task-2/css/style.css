@@ -1,5 +1,6 @@
-/* ***NOTE***all font sizes are shown in rem units to assure accesability of the file. Figma design expresses certain measurements in decimal values which are converted in closest whole value in px and after to REM*** */
+/* ***note***all font sizes are shown in rem units to assure accesability of the code. Figma design expresses certain measurements in decimal values which are converted in closest whole value in px and after to REM*** */
 
+html,
 *,
 *::before,
 *::after {
@@ -12,7 +13,11 @@ body {
   font-family: "Barlow Condensed", sans-serif;
   text-align: center;
   font-style: normal;
-  margin: 4rem 0rem;
+  margin: 4rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  flex-wrap: wrap;
 }
 main,
 header,
@@ -25,10 +30,11 @@ section,
 }
 main {
   gap: 2rem;
+  width: 100%;
 }
 header {
   gap: 1rem;
-  margin-inline: 1rem;
+  margin: 0 1rem;
 }
 h1 {
   font-weight: 600;
@@ -54,18 +60,20 @@ button {
 }
 section {
   gap: 4rem;
-  margin: 0 2.25rem;
+  margin-bottom: 2.25rem;
+  width: 100%;
 }
 .recipes {
   gap: 2rem;
 }
 .cocktail-img {
   border-radius: 100%;
+  width: 100%;
 }
 .img-wrapper {
   position: relative;
-  height: 383px;
-  width: 383px;
+  max-height: 360px;
+  max-width: 360px;
 }
 .graphics {
   position: absolute;
